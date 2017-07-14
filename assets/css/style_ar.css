@@ -1,0 +1,133 @@
+body{
+    font-family: gesstwo;
+}
+.social-top {
+    float: right;
+}
+a.login {
+    margin-right: 0;
+    margin-left: 15px;
+    float: right;
+    font-size: 13px;
+    margin-top: 7px;
+}
+#main-menu ul {
+    float: left !important;
+}
+.inside-ul a {
+    padding-right: 22px !important;
+}
+.inside-ul a::before {
+    left: auto;
+    top: 12px;
+    right: 0;
+}
+.ul-title::after {
+    left: auto;
+    right: 0;
+}
+#copyRight p {
+    text-align: left;
+}
+.news-letter .form-control {
+    float: right;
+}
+.follow {
+    float: right;
+}
+.social-ul {
+    float: right;
+    margin-right: 25px;
+}
+#map .btn-info {
+    margin-left: 30px;
+    float: left;
+    margin-right: 0;
+}
+.select-lang {
+    float: left;
+}
+.Property-name {
+    border-right: 4px solid;
+    padding-right: 6px;
+    border-left: 0;
+    font-family: gesstwo;
+}
+.prop-table th ,.btn-dark { 
+    font-family: gesstwo;
+    font-size: 13px;
+}
+.search-property .form-control { 
+    font-size: 13px; 
+}
+.featured-properties .Property span ,.newest-properties li span{
+    float: left !important;
+}
+.prop-option li {
+    float: right;
+}
+span.prop-price {
+    float: left;
+}
+.prop-type::after {
+    right: auto;
+    left: 0;
+    border-right: 0;
+    border-left: 11px solid #4aa1da;
+}
+span.prop-type {
+    float: left;
+}
+.prop-type::before {
+    right: -11px;
+    left: auto;
+    border-left: 11px solid #292d2d;
+    border-right: 0;
+}
+.gallery-caption{
+    font-family: gesstwo;    
+}
+.listing-prop .caption{
+    font-family: gesstwo;
+}
+.caption h4{
+    font-size: 16px;
+}
+#avdanced-search .form-control ,#avdanced-search label ,.btn ,label , .page-desc , .login-form{
+    font-family: gesstwo;
+    font-size: 13px;
+    text-align: right;
+}
+.login-form .control-label {
+    text-align: right;
+}
+.contact-side .text-blue, .contactus-page .text-blue {
+    color: #1e5d8e;
+    font-family: gesstwo;
+    font-size: 20px;
+}
+@media(min-width:768px){
+.half { 
+    margin-right: 30px !important;
+    margin-left: 0px !important;
+}
+ 
+}
+
+/*** header phone Style ***/
+.header-phone span{
+   color: white;
+   font-size: 20px;
+   padding: 5px;
+}
+.header-phone .fa {
+    color: white;
+    border: 2px solid;
+    border-radius: 50%;
+    font-size: 17px;
+    width: 27px !important;
+    height: 27px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 2px;
+}

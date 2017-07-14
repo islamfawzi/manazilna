@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|images|upload|config|css|js|Content|Scripts|fonts|user_guide|tiny_mce|script\.js|jquery-1.9.1.min\.js|galleria.twelve.min\.js|galleria-1.2.5.min\.js)
+RewriteRule ^(.*)$ /manzilna-ci/index.php/$1 [L]

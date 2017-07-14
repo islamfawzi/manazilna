@@ -1,0 +1,3 @@
+db: manaziln_db
+user: manaziln_tamer
+pass: 9$HD(l5GDV!z
