@@ -14,6 +14,9 @@ $route['admincp/(:any)/(:num)'] = "admincp/$1/$2";
 $route['login'] = "login";
 $route['login/(:any)'] = "login/$1";
 $route['gallery/(:any)'] = "gallery/$1";
+
+$route['do-upload'] = "upload";
+$route['delete-image'] = "upload/delete";
 /** ########################################################## Arabic Site Routes ############# * */
 
 $route['ar'] = "ar/welcome";

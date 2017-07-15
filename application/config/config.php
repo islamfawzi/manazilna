@@ -1,7 +1,7 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 
-$config['base_url']	= 'http://localhost:81/manzilna-ci/';
+$config['base_url']	= 'http://localhost/manzilna-ci/';
 /*
 |--------------------------------------------------------------------------
 | Index File

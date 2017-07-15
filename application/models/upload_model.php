@@ -2,7 +2,7 @@
 
 class Upload_model extends CI_Model {
 
-    function upload_image($path = 'upload/', $old = '', $max_size = '2048', $max_width = '2048', $max_height = '2048', $allowed = 'gif|jpg|png', $thumb = FALSE, $thumb_path = './upload/thumb/', $width = 300, $height = 400, $marker = '') {
+    function upload_image($path = 'upload/', $old = '', $max_size = '2048', $max_width = '2048', $max_height = '2048', $allowed = 'gif|jpg|png', $thumb = FALSE, $thumb_path = './upload/thumb/', $width = 300, $height = 400, $marker = '', $ratio = TRUE) {
         $data = array();
         $errors = array();
         $config['upload_path'] = './' . $path;
@@ -35,7 +35,7 @@ class Upload_model extends CI_Model {
                         if ($thumb == TRUE) {
                             $th_path[] = $thumb_path . $data[$i]['upload_data']['file_name'] . $marker;
                             $this->load->library('image_lib');
-                            $this->resize($data[$i]['upload_data']['full_path'], $data[$i]['upload_data']['file_name'], $thumb_path, $width, $height, $marker);
+                            $this->resize($data[$i]['upload_data']['full_path'], $data[$i]['upload_data']['file_name'], $thumb_path, $width, $height, $marker, $ratio);
                         }
                     }
                 }
@@ -56,7 +56,7 @@ class Upload_model extends CI_Model {
                         if ($thumb == TRUE) {
                             $th_path[] = $thumb_path . $data['upload_data']['file_name'];
                             $this->load->library('image_lib');
-                            $this->resize($data['upload_data']['full_path'], $data['upload_data']['file_name'], $thumb_path, $width, $height, $marker);
+                            $this->resize($data['upload_data']['full_path'], $data['upload_data']['file_name'], $thumb_path, $width, $height, $marker, $ratio);
                         }
                     }
                 }
